@@ -1,9 +1,10 @@
 body {
   font-family: "Courier New", Courier, monospace;
   font-size: 24px;
-  color: #0082ff;
+  color: #ffffff;
   align-items: center;
   justify-content: center;
   padding: 0.5px;
-  background: black;
+  background: rgb(255 255 255);
+  background: linear-gradient(90deg, rgb(64 61 99) 0%, rgb(65 81 85) 65%);
 }

@@ -14,6 +14,14 @@ function main() {
 
   let finalSum = resDay + resMonth + resYear;
 
+  document.getElementById("yourNumber").innerHTML = getFinalValue(finalSum);
+  console.log(finalSum);
+  let yourAge = checkAgeRange(getFinalValue(finalSum));
+  console.log(yourAge);
+  document.getElementById("yourAge").innerHTML = yourAge;
+
+
+
   if (finalSum <= 11) { //Normal case
     document.getElementById("yourNumber").innerHTML = getFinalValue(finalSum);
   } else {
@@ -43,4 +51,7 @@ function getFinalValue(val) {
   return sumVal;
 }
 
-//22 33 <=11
+function checkAgeRange(val) {
+  let yourAgeRange = 36 - val; //
+  return yourAgeRange;
+}
